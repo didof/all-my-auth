@@ -1,0 +1,67 @@
+<% let color = typeof theme != 'undefined' ? theme : 'black' %>
+
+<nav
+	class="navbar has-shadow is-light"
+	role="navigation"
+	aria-label="main navigation"
+>
+	<div class="container">
+		<!-- BRAND -->
+		<div class="navbar-brand">
+			<a href="/" class="navbar-item"><h1 class="title is-2">OAuth</h1></a>
+		</div>
+
+		<!-- MENU -->
+		<div class="navbar-menu">
+			<!-- START -->
+			<div class="navbar-start">
+				<a class="navbar-item">
+					Documentation
+				</a>
+				<a class="navbar-item">
+					Contact Us
+				</a>
+				<a class="navbar-item">
+					About Us
+				</a>
+			</div>
+
+			<!-- END -->
+			<div class="navbar-end">
+				<!-- dropdown link -->
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a class="navbar-link" href="/auth/login">
+						Login
+					</a>
+
+					<!-- dropdown content -->
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="/">
+							<h1 class="subtitle">Local</h1>
+						</a>
+						<a class="navbar-item" href="/api/auth/login">
+							Google
+						</a>
+						<a class="navbar-item" href="/">
+							Facebook
+						</a>
+						<a class="navbar-item" href="/">
+							GitHub
+						</a>
+						<hr class="navbar-divider" />
+						<a class="navbar-item">
+							Report an issue
+						</a>
+					</div>
+				</div>
+
+				<!-- BUTTONS -->
+				<div class="navbar-item">
+					<div class="buttons">
+						<a class="button is-<%= color %> is-outlined">Signup</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
